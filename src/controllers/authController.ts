@@ -131,6 +131,7 @@ class AuthController {
 
   static async register(req: Request, res: Response, next: NextFunction) {
     try {
+      console.log(req.body);
       const parsedBody = await registerSchema.parseAsync(req.body);
 
       // Check if the username already exists
@@ -166,6 +167,7 @@ class AuthController {
         user,
       });
     } catch (error) {
+      console.log(error);
       res.status(500).json({ ok: false, message: "Internal server error!" });
     }
   }

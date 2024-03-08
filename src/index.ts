@@ -5,6 +5,9 @@ import dotenv from "dotenv";
 dotenv.config();
 const main = async () => {
   const app = express();
+
+  app.use(express.json());
+
   app.use("/api/auth", authRouter);
 
   app.listen(process.env.PORT, async () => {
