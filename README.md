@@ -17,3 +17,7 @@ You can access the live demo of the application at the following URLs:
 - [Login](https://nodejs-internship-task.onrender.com/api/auth/login)
 - [Forgot Password](https://nodejs-internship-task.onrender.com/api/auth/forgot-password)
 - [Reset Password](https://nodejs-internship-task.onrender.com/api/auth/reset-password)
+
+**Testing with Postman**
+
+You can test the API endpoints using Postman. Simply import the provided collection into Postman and use the endpoints to interact with the application.
